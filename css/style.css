@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: #000;
+}
+
+
+/* /////////////////////////////////////////////////////////// */
+
+
+/* NAVIGATION MENU - START 
+*  Licensed under MIT (https://codepen.io/mutedblues/pen/MmPNPG)
+*  Copyright @mutedblues - https://codepen.io/mutedblues
+*/
+
+.imglogo {
+    height: 80px;
+}
+
+.nav {
+    background-color: #fff;
+    box-shadow: 6px 6px 9px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.nav li a {
+    display: block;
+    padding: 31px 30px;
+    border-left: 1px solid #ebe8e8;
+    text-decoration: none;
+}
+
+.nav li a:hover,
+.nav .menu-btn:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+
+/* menu */
+
+.nav .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+
+/* menu icon */
+
+.nav .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 30px 30px;
+    position: relative;
+    user-select: none;
+    margin-top: 12px;
+}
+
+.nav .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 25px;
+}
+
+.nav .menu-icon .navicon:before,
+.nav .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.nav .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.nav .menu-icon .navicon:after {
+    top: -5px;
+}
+
+
+/* menu btn */
+
+.nav .menu-btn {
+    display: none;
+}
+
+.nav .menu-btn:checked~.menu {
+    max-height: 420px;
+}
+
+.nav .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.nav .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.nav .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+@media (min-width: 1350px) {
+    .nav li {
+        float: left;
+    }
+    .nav .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .nav .menu-icon {
+        display: none;
+    }
+}
+
+@media (min-width: 391px) and (max-width: 1349px) {
+    .imglogo {
+        padding-top: 10px;
+        width: 300px;
+        height: 60px;
+    }
+    .nav .menu-icon {
+        margin-top: 1px;
+    }
+    .nav li a {
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .imglogo {
+        margin-top: 12px;
+        margin-left: 5px;
+        width: 200px;
+        height: 40px;
+    }
+    .nav .menu-icon {
+        margin-top: 1px;
+    }
+    .nav li a {
+        padding: 15px 20px;
+    }
+}
+
+
+/* NAVIGATION MENU - END
+*  Licensed under MIT (https://codepen.io/mutedblues/pen/MmPNPG)
+*  Copyright @mutedblues - https://codepen.io/mutedblues
+*/
+
+
+/* /////////////////////////////////////////////////////////// */
+
+
+/* HEADER IMG */
+
+.header {
+    height: 100vh;
+    background: url("/img/img001.jpg");
+    background-position: center top;
+    background-size: 100% auto;
+    color: white;
+}
+
+
+/* BOUNCING ARROW */
+
+.contentDiv {
+    background-color: transparent;
+    height: 200px;
+    width: 200px;
+}
+
+@keyframes bouncing {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 20px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+.arrow {
+    position: absolute;
+    animation: bouncing 1s infinite ease-in-out;
+    bottom: 0;
+    display: block;
+    height: 70px;
+    left: calc(50% - 35px);
+    width: 70px;
+    z-index: 2;
+}
+
+
+/* CENTERED TEXT ON MAIN PAGE */
+
+h1.centeredText {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 0;
+    right: 0;
+    font-size: 4.5rem;
+    z-index: 1;
+    color: black;
+    padding: 20px;
+    background-color: white;
+    width: 20%;
+    opacity: 0.6;
+}
+
+
+/* SMALLER CENTERED TEXT ON MAIN PAGE ON SMARTPHONES 
+AND SMALLER DEVICES ALSO */
+
+@media (min-width: 1024px) {
+    h1.centeredText {
+        font-size: 4.5rem;
+        word-wrap: break-word;
+        margin: auto;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    h1.centeredText {
+        font-size: 3.5rem;
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 639px) {
+    h1.centeredText {
+        font-size: 2.5rem;
+        word-wrap: break-word;
+    }
+}
+
+
+/* SMALLER H1 TEXT ON MAIN PAGE ON SMARTPHONES 
+AND SMALLER DEVICES ALSO */
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    h1 {
+        font-size: 2.3rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 639px) {
+    h1 {
+        font-size: 2.0rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+/* SMALLER H2 TEXT ON MAIN PAGE ON SMARTPHONES 
+AND SMALLER DEVICES ALSO */
+
+@media (max-width: 639px) {
+    h2 {
+        font-size: 1.6rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+/* CENTERED TEXT ON THE REST PAGES */
+
+h1.centeredText02 {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    font-size: 4.5rem;
+    z-index: 1;
+}
+
+.whiteSection {
+    background-color: #fff;
+    color: black;
+}
+
+.colorSection {
+    background: linear-gradient(90deg, rgb(210, 210, 210), rgb(160, 160, 160));
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+section h1,
+section h2 {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section p {
+    width: 75%;
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
