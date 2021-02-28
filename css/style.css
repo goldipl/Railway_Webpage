@@ -219,7 +219,7 @@ h3 {
 
 .header {
     height: 100vh;
-    background: url("/img/img001.jpg");
+    background: url("https://github.com/goldipl/Railway_Webpage/blob/main/img/img001.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: auto;
