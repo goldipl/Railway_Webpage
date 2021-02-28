@@ -221,7 +221,8 @@ h3 {
     height: 100vh;
     background: url("/img/img001.jpg");
     background-position: center top;
-    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-size: auto;
     color: white;
 }
 
