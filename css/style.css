@@ -219,7 +219,7 @@ h3 {
 
 .header {
     height: 100vh;
-    background: url("https://raw.githubusercontent.com/goldipl/Railway_Webpage/main/img/img001.jpg");
+    background: url("/img/img001.jpg");
     background-position: center top;
     background-size: 100% auto;
     color: white;
@@ -270,7 +270,8 @@ h1.centeredText {
     font-size: 4.0rem;
     z-index: 1;
     background-color: rgba(160, 160, 160, 0.25);
-    width: 30%;
+    width: 35%;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 
