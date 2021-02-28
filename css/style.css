@@ -28,8 +28,8 @@ h1 {
 
 h2 {
     text-align: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     font-family: 'Arsenal', sans-serif;
     font-weight: 800;
     font-size: 1.7rem;
@@ -37,8 +37,8 @@ h2 {
 
 h3 {
     text-align: center;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     font-family: 'Arsenal', sans-serif;
     font-weight: 800;
     font-size: 1.3rem;
