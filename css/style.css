@@ -54,7 +54,7 @@ h3 {
 */
 
 .imglogo {
-    height: 80px;
+    height: 68px;
 }
 
 .nav {
@@ -173,6 +173,9 @@ h3 {
     }
     .nav .menu-icon {
         display: none;
+    }
+    .imglogo {
+        margin-top: 8px;
     }
 }
 
