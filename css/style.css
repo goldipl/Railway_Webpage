@@ -53,10 +53,6 @@ h3 {
 *  Copyright @mutedblues - https://codepen.io/mutedblues
 */
 
-.imglogo {
-    height: 68px;
-}
-
 .nav {
     background-color: #fff;
     box-shadow: 6px 6px 9px 0 rgba(0, 0, 0, .1);
@@ -174,17 +170,9 @@ h3 {
     .nav .menu-icon {
         display: none;
     }
-    .imglogo {
-        margin-top: 8px;
-    }
 }
 
 @media (min-width: 391px) and (max-width: 1349px) {
-    .imglogo {
-        padding-top: 10px;
-        width: 300px;
-        height: 60px;
-    }
     .nav .menu-icon {
         margin-top: 1px;
     }
@@ -194,12 +182,6 @@ h3 {
 }
 
 @media (max-width: 390px) {
-    .imglogo {
-        margin-top: 12px;
-        margin-left: 5px;
-        width: 200px;
-        height: 40px;
-    }
     .nav .menu-icon {
         margin-top: 1px;
     }
