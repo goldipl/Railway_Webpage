@@ -103,7 +103,7 @@ h3 {
     cursor: pointer;
     display: block;
     float: right;
-    padding: 30px 30px;
+    padding: 24px 10px;
     position: relative;
     user-select: none;
     margin-top: 12px;
@@ -112,9 +112,9 @@ h3 {
 .nav .menu-icon .navicon {
     background: #333;
     display: block;
-    height: 2px;
+    height: 3px;
     position: relative;
-    width: 25px;
+    width: 32px;
 }
 
 .nav .menu-icon .navicon:before,
@@ -129,11 +129,11 @@ h3 {
 }
 
 .nav .menu-icon .navicon:before {
-    top: 5px;
+    top: 10px;
 }
 
 .nav .menu-icon .navicon:after {
-    top: -5px;
+    top: -10px;
 }
 
 
