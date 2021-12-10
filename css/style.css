@@ -71,6 +71,7 @@ h3 {
     display: block;
     padding: 31px 30px;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .nav li a:hover,
