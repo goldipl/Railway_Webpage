@@ -77,7 +77,7 @@ h3 {
 
 .nav li a:hover,
 .nav .menu-btn:hover {
-    background-color: rgb(240, 240, 240);
+    text-decoration: 3px underline;
 }
 
 .nav a.logo {
