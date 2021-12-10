@@ -10,7 +10,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Convergence', sans-serif;
     background-color: #f4f4f4;
 }
 
@@ -22,7 +22,6 @@ h1 {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
     font-size: 2.4rem;
 }
 
@@ -30,7 +29,6 @@ h2 {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-family: 'Arsenal', sans-serif;
     font-weight: 800;
     font-size: 1.7rem;
 }
@@ -39,7 +37,6 @@ h3 {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-family: 'Arsenal', sans-serif;
     font-weight: 800;
     font-size: 1.3rem;
 }
