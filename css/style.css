@@ -266,7 +266,7 @@ h1.centeredText {
     left: 0;
     right: 0;
     margin: 0 auto;
-    font-size: 4.0rem;
+    font-size: 3.5rem;
     z-index: 1;
     background-color: rgba(160, 160, 160, 0.25);
     width: 45%;
@@ -279,7 +279,6 @@ AND SMALLER DEVICES ALSO */
 
 @media (min-width: 1024px) {
     h1.centeredText {
-        font-size: 4.0rem;
         top: 40%;
         left: 0;
         right: 0;
@@ -288,7 +287,6 @@ AND SMALLER DEVICES ALSO */
 
 @media (min-width: 640px) and (max-width: 1023px) {
     h1.centeredText {
-        font-size: 3.5rem;
         word-wrap: break-word;
         width: 60%;
     }
