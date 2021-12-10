@@ -54,8 +54,7 @@ h3 {
 */
 
 .nav {
-    background-color: #fff;
-    box-shadow: 6px 6px 9px 0 rgba(0, 0, 0, .1);
+    background-color: rgba(255, 255, 255, 0);
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -66,13 +65,12 @@ h3 {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .nav li a {
     display: block;
     padding: 31px 30px;
-    border-left: 1px solid #ebe8e8;
     text-decoration: none;
 }
 
@@ -218,7 +216,7 @@ h3 {
 
 .header {
     height: 100vh;
-    background: url("https://raw.githubusercontent.com/goldipl/Railway_Webpage/main/img/img001.jpg");
+    background: url("/img/img001.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: auto;
@@ -253,7 +251,7 @@ h3 {
     display: block;
     height: 70px;
     left: calc(50% - 35px);
-    width: 70px;
+    width: 40px;
     z-index: 2;
 }
 
