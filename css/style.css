@@ -224,6 +224,15 @@ h3 {
     color: white;
 }
 
+.headerSmall {
+    height: 70px;
+    background: url("../img/backgroundImage.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: white;
+}
+
 
 /* BOUNCING ARROW */
 
