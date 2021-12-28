@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Convergence', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     background-color: #f4f4f4;
 }
 
@@ -51,6 +52,7 @@ h3 {
 */
 
 .nav {
+    font-family: 'Convergence', sans-serif;
     background-color: rgba(255, 255, 255, 0);
     position: absolute;
     top: 0;
@@ -81,6 +83,7 @@ h3 {
 }
 
 .nav a.logo {
+    font-family: 'Convergence', sans-serif;
     text-decoration: none;
     font-size: 32px;
     display: inline-flex;
@@ -269,6 +272,7 @@ h3 {
 /* CENTERED TEXT ON MAIN PAGE */
 
 h1.centeredText {
+    font-family: 'Convergence', sans-serif;
     color: #000;
     position: absolute;
     top: 40%;
