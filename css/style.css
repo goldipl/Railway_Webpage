@@ -334,6 +334,10 @@ section {
     padding: 40px 0;
 }
 
+#section01 {
+    margin-top: 32px;
+}
+
 section h1,
 section h2 {
     width: 75%;
