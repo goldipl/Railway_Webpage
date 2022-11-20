@@ -58,6 +58,7 @@ h3 {
     left: 0;
     width: 100%;
     z-index: 30;
+    border-bottom: 2px solid #000000;
 }
 
 .nav .material-symbols-outlined {
