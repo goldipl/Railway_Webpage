@@ -52,11 +52,14 @@ h3 {
 */
 
 .nav {
+    display: flex;
+    justify-content: center;
     background-color: #FFBE2E;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    margin: 0 auto;
     z-index: 30;
     border-bottom: 2px solid #000000;
 }
@@ -107,6 +110,7 @@ h3 {
     font-size: 32px;
     display: inline-flex;
     padding: 16px 16px 16px 32px;
+    margin-right: 80px;
 }
 
 
@@ -186,7 +190,7 @@ h3 {
     top: 0;
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1450px) {
     .nav li {
         float: left;
     }
@@ -200,7 +204,10 @@ h3 {
     }
 }
 
-@media (min-width: 391px) and (max-width: 1349px) {
+@media (min-width: 390px) and (max-width: 1449px) {
+    .nav {
+        display: block;
+    }
     .nav .menu-icon {
         margin-top: 1px;
     }
@@ -209,10 +216,11 @@ h3 {
     }
     .nav a.logo {
         padding: 8px 8px 8px 16px;
+        margin-right: 0;
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 389px) {
     .nav .menu-icon {
         margin-top: 1px;
     }
@@ -222,6 +230,7 @@ h3 {
     .nav a.logo {
         padding: 8px 8px 8px 16px;
         font-size: 28px;
+        margin-right: 0;
     }
 }
 
