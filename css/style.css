@@ -169,7 +169,7 @@ h3 {
 }
 
 .nav .menu-btn:checked~.menu-icon .navicon {
-    background: transparent;
+    background: rgba(255,255,255,0);
 }
 
 .nav .menu-btn:checked~.menu-icon .navicon:before {
@@ -256,52 +256,42 @@ h3 {
     color: #FFFFFF;
 }
 
-
-/* BOUNCING ARROW */
-
-.contentDiv {
-    background-color: transparent;
-    height: 200px;
-    width: 200px;
-}
-
-@keyframes bouncing {
-    0% {
-        bottom: 0;
-    }
-    50% {
-        bottom: 20px;
-    }
-    100% {
-        bottom: 0;
-    }
-}
-
-.arrow {
-    position: absolute;
-    animation: bouncing 1s infinite ease-in-out;
-    bottom: 0;
-    display: block;
-    height: 70px;
-    left: calc(50% - 35px);
-    width: 40px;
-    z-index: 2;
-}
-
-
 /* CENTERED TEXT ON MAIN PAGE */
 
 h1.centeredText {
-    color: #000;
-    position: absolute;
+    position: relative;
     top: 40%;
     left: 0;
     right: 0;
     margin: 0 auto;
     font-size: 3.5rem;
     z-index: 1;
-    width: 45%;
+    width: 50%;
     text-shadow: -1px 0 #FFFFFF, 0 1px #FFFFFF, 1px 0 #FFFFFF, 0 -1px #FFFFFF;
+    background-color: #f4f4f48c;
+    color: #000000;
+    border-radius: 16px;
+    padding: 32px 16px;
+    border: 3px solid #FFBE2E;
+}
+
+h1.centeredText .read-more {
+    position: absolute;
+    bottom: -36px;
+    right: 10%;
+    font-size: 1.6rem;
+    z-index: 1;
+    width: auto;
+    background-color: #FFBE2E;
+    border-radius: 16px;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 2px solid #000000;
+    transition: 0.6s;
+}
+
+h1.centeredText .read-more:hover {
+    background-color: #f4f4f48c;
 }
 
 
@@ -347,19 +337,8 @@ AND SMALLER DEVICES ALSO */
     }
 }
 
-.whiteSection {
-    background-color: #FFFFFF;
-    color: black;
-}
-
-.colorSection {
-    background: #FFBE2E;
-    color: black;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
+section {
+    padding: 40px 0;
 }
 
 section h1,
@@ -377,6 +356,20 @@ section p {
     padding-bottom: 30px;
 }
 
+.whiteSection {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.colorSection {
+    background: #FFBE2E;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
 
 /* PROJECTS FLEXBOX */
 
