@@ -204,7 +204,7 @@ h3 {
     }
 }
 
-@media (min-width: 390px) and (max-width: 1449px) {
+@media (max-width: 1449px) {
     .nav {
         display: block;
     }
@@ -229,7 +229,8 @@ h3 {
     }
     .nav a.logo {
         padding: 8px 8px 8px 16px;
-        font-size: 28px;
+        font-size: 20px;
+        line-height: 40px;
         margin-right: 0;
     }
 }
