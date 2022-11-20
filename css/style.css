@@ -319,7 +319,7 @@ AND SMALLER DEVICES ALSO */
 
 @media (max-width: 639px) {
     h1.centeredText {
-        font-size: 2.5rem;
+        font-size: 2rem;
         word-wrap: break-word;
         width: 100%;
     }
