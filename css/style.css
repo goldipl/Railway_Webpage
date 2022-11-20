@@ -301,6 +301,7 @@ AND SMALLER DEVICES ALSO */
 
 @media (min-width: 640px) and (max-width: 1023px) {
     h1.centeredText {
+        font-size: 2.5rem;
         word-wrap: break-word;
         width: 60%;
     }
@@ -308,8 +309,6 @@ AND SMALLER DEVICES ALSO */
 
 @media (max-width: 639px) {
     h1.centeredText {
-        font-size: 2.5rem;
-        word-wrap: break-word;
         width: 100%;
     }
 }
