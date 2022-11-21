@@ -516,10 +516,10 @@ img {
 }
 
 .numbers_section .numbers_section-container .numbers_section--slot .slot-number {
-	font-size: 40px;
-	font-weight: 600;
-	line-height: 40px;
-	margin-bottom: 8px;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 52px;
+    margin-bottom: 8px;
 }
 
 .numbers_section .numbers_section-container .numbers_section--slot .slot-text {
