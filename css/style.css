@@ -343,7 +343,7 @@ AND SMALLER DEVICES ALSO */
 }
 
 section {
-    padding: 40px 0;
+    padding: 80px 0;
 }
 
 #section01 {
@@ -441,7 +441,6 @@ img {
     width: 100%;
 }
 
-
 /* Image text section */
 .image_text_section-container {
     display: flex;
@@ -479,6 +478,9 @@ img {
 }
 
 @media (max-width: 1400px) {
+    section {
+        padding: 40px 0;
+    }
     .image_text_section-container,
     .image_text_section .image_text_section-image .image_container,
     .image_text_section .image_text_section-text {
@@ -490,5 +492,49 @@ img {
     .image_text_section .image_text_section-text h1 {
         margin: 0;
         width: 100%;
+    }
+}
+
+/* Numbers section */
+.numbers_section {
+	display: flex;
+}
+
+.numbers_section .numbers_section-container {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	width: 1280px;
+}
+
+.numbers_section .numbers_section-container .numbers_section--slot {
+	width: 33.3%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.numbers_section .numbers_section-container .numbers_section--slot .slot-number {
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 40px;
+	margin-bottom: 8px;
+}
+
+.numbers_section .numbers_section-container .numbers_section--slot .slot-text {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+@media (max-width: 800px) {
+    .numbers_section .numbers_section-container {
+        flex-direction: column;
+        width: 80vw;
+    }
+    .numbers_section .numbers_section-container .numbers_section--slot {
+        width: 100%;
+        margin: 24px 0;
     }
 }
