@@ -1,0 +1,34 @@
+@use "../styles/tokens" as *;
+@use "../styles/mixins" as *;
+
+.header {
+  @include container;
+  padding-top: calc($nav-height + 88px);
+  padding-bottom: 48px;
+  text-align: center;
+}
+
+.eyebrow {
+  @include liquid-glass($radius-pill, $glass-fill, 12px);
+  display: inline-block;
+  margin-bottom: 24px;
+  padding: 6px 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $gold;
+}
+
+.title {
+  @include gold-text;
+  font-size: clamp(2.4rem, 7vw, 4.5rem);
+  padding-bottom: 0.08em;
+}
+
+.lead {
+  max-width: 640px;
+  margin: 20px auto 0;
+  font-size: 1.15rem;
+  color: $text-muted;
+}

@@ -1,0 +1,48 @@
+@use "../../styles/tokens" as *;
+@use "../../styles/mixins" as *;
+
+.grid {
+  @include container;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 20px;
+}
+
+.card {
+  @include liquid-glass($radius);
+  @include reveal(30px);
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 32px 28px;
+  transition: transform 0.4s $ease-spring;
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    color: $text-muted;
+  }
+}
+
+.index {
+  @include liquid-glass-gold($radius-sm);
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 8px;
+  font-family: var(--font-display), sans-serif;
+  font-size: 1rem;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  padding-top: 56px;
+}

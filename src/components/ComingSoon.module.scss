@@ -1,0 +1,45 @@
+@use "../styles/tokens" as *;
+@use "../styles/mixins" as *;
+
+.wrap {
+  @include container;
+  max-width: 760px;
+}
+
+.panel {
+  @include liquid-glass($radius-lg);
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  overflow: hidden;
+  padding: clamp(36px, 7vw, 64px) clamp(24px, 6vw, 56px);
+  text-align: center;
+
+  h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+
+  p {
+    max-width: 460px;
+    color: $text-muted;
+  }
+}
+
+// Przesuwające się podkłady kolejowe — animowany pasek postępu prac
+.rail {
+  width: min(100%, 320px);
+  height: 10px;
+  border-radius: $radius-pill;
+  background:
+    repeating-linear-gradient(90deg, rgba($gold, 0.9) 0 14px, transparent 14px 28px),
+    rgba(255, 255, 255, 0.06);
+  background-size: 28px 100%, auto;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  animation: sleepers 1.2s linear infinite;
+}
+
+@keyframes sleepers {
+  to {
+    background-position: 28px 0, 0 0;
+  }
+}

@@ -1,0 +1,65 @@
+@use "../styles/tokens" as *;
+
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: radial-gradient(120% 80% at 50% 0%, #121008 0%, $black 60%);
+  pointer-events: none;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.5;
+  animation: drift 26s ease-in-out infinite alternate;
+}
+
+.one {
+  width: 46vmax;
+  height: 46vmax;
+  top: -14vmax;
+  left: -12vmax;
+  background: radial-gradient(circle, rgba($gold, 0.55), transparent 65%);
+}
+
+.two {
+  width: 38vmax;
+  height: 38vmax;
+  bottom: -16vmax;
+  right: -10vmax;
+  background: radial-gradient(circle, rgba($gold-deep, 0.5), transparent 65%);
+  animation-duration: 32s;
+  animation-direction: alternate-reverse;
+}
+
+.three {
+  width: 24vmax;
+  height: 24vmax;
+  top: 40%;
+  left: 55%;
+  background: radial-gradient(circle, rgba($gold-light, 0.28), transparent 70%);
+  animation-duration: 22s;
+}
+
+// Delikatna siatka — przypomina rozkład torów
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse at center, #000 20%, transparent 75%);
+}
+
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(6vmax, 4vmax, 0) scale(1.12);
+  }
+}

@@ -1,0 +1,57 @@
+@use "../styles/tokens" as *;
+@use "../styles/mixins" as *;
+
+.footer {
+  @include container;
+  padding-block: 64px 32px;
+}
+
+.inner {
+  @include liquid-glass($radius-lg);
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  padding: 32px 24px;
+  text-align: center;
+
+  @include up($bp-md) {
+    grid-template-columns: auto 1fr auto;
+    justify-items: start;
+    text-align: left;
+    padding: 28px 36px;
+  }
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display), sans-serif;
+  color: $gold;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 20px;
+  font-size: 0.95rem;
+  color: $text-muted;
+
+  @include up($bp-md) {
+    justify-self: center;
+  }
+
+  a {
+    transition: color 0.2s;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+}
+
+.copy {
+  font-size: 0.875rem;
+  color: $text-faint;
+}
