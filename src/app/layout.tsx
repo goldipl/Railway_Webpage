@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Krona_One, Space_Grotesk } from "next/font/google";
+import { Bricolage_Grotesque, Instrument_Serif, Manrope } from "next/font/google";
 import type { ReactNode } from "react";
 import AmbientBackground from "@/components/AmbientBackground";
 import Footer from "@/components/Footer";
@@ -7,16 +7,23 @@ import Navbar from "@/components/Navbar";
 import { siteName } from "@/data/site";
 import "@/styles/globals.scss";
 
-const body = Space_Grotesk({
+const body = Manrope({
   subsets: ["latin", "latin-ext"],
   variable: "--font-body",
   display: "swap",
 });
 
-const display = Krona_One({
+const display = Bricolage_Grotesque({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const accent = Instrument_Serif({
   subsets: ["latin", "latin-ext"],
   weight: "400",
-  variable: "--font-display",
+  style: ["normal", "italic"],
+  variable: "--font-accent",
   display: "swap",
 });
 
@@ -39,7 +46,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="pl" className={`${body.variable} ${display.variable}`}>
+    <html lang="pl" className={`${body.variable} ${display.variable} ${accent.variable}`}>
       <body>
         <AmbientBackground />
         <Navbar />

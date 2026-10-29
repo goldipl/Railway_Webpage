@@ -15,6 +15,8 @@ export const stats = [
   { value: 240, suffix: "", label: "inwestycji" },
 ] as const;
 
+export const routeStops = ["Projekt", "Budowa", "Sterowanie", "Serwis"] as const;
+
 export const offer = [
   {
     title: "Projektowanie linii",
