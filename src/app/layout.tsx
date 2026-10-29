@@ -26,6 +26,11 @@ export const metadata: Metadata = {
     template: `${siteName} — %s`,
   },
   description: "GoldenRails — projektowanie, budowa i utrzymanie infrastruktury kolejowej.",
+  appleWebApp: {
+    capable: true,
+    title: siteName,
+    statusBarStyle: "black-translucent",
+  },
 };
 
 export const viewport: Viewport = {
